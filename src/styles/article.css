@@ -1,0 +1,28 @@
+.row {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.span-1-of-3 {
+  width: 32.26%;
+}
