@@ -5,6 +5,7 @@ import "./App.css";
 import Register from "./components/Register";
 import HomePage from "./components/HomePage";
 import { Switch, Route } from "react-router-dom";
+import CategoryPage from "./components/CategoryPage";
 
 export default class App extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class App extends Component {
           <Route path="/homepage" component={HomePage} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+          <Route path="/categorypage" component={CategoryPage} />
         </Switch>
       </div>
     );
