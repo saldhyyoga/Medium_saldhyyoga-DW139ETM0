@@ -1,0 +1,231 @@
+.Container1 {
+  margin-top: 50px;
+  margin-left: 32px;
+}
+
+.Container2 {
+  margin-top: 55px;
+  margin-left: 32px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: purple;
+  font-weight: bold;
+  font-size: 17px !important;
+}
+.subtitle2 {
+  font-weight: bold;
+  font-size: 17px !important;
+}
+
+.ButtonFollow {
+  border: 1px solid purple;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  margin-top: 70px;
+  margin-left: 180px;
+}
+
+.SecondGrid {
+  display: flex;
+  flex-direction: row;
+}
+
+.ThirdGrid {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.BoxContainer1 img {
+  width: 718px;
+  height: 354px;
+  margin-top: 55px;
+  margin-left: 32px;
+}
+
+.BoxContainer2 {
+  width: 438px;
+  height: 354px;
+  margin-top: 55px;
+  margin-left: 0px;
+  background-color: #6a0bff;
+}
+
+.Text1 {
+  width: 358px;
+  height: 67px;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 100px;
+  padding-left: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.Text2 {
+  width: 358px;
+  height: 44px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 32px;
+  color: white;
+  text-align: center;
+}
+.Text3 {
+  width: 358px;
+  height: 44px;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 32px;
+  color: white;
+  text-align: center;
+}
+
+.IanFrisch {
+  color: #daf832;
+}
+
+.BoxContainer3 {
+  width: 438px;
+  height: 354px;
+  margin-top: 55px;
+  margin-left: 32px;
+  background-color: white;
+}
+
+.BoxContainer4 img {
+  width: 718px;
+  height: 354px;
+  margin-top: 55px;
+  margin-right: 32px;
+}
+
+.Text4 {
+  width: 358px;
+  height: 67px;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 100px;
+  padding-left: 32px;
+  color: black;
+}
+
+.Text5 {
+  width: 358px;
+  height: 44px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 32px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+.Text6 {
+  width: 358px;
+  height: 44px;
+  font-size: 16px;
+  margin-top: 50px;
+  padding-left: 32px;
+  color: black;
+  text-align: center;
+}
+
+.Aaron {
+  color: #6a0bff;
+}
+
+.FourGrid {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 40px;
+  width: 1156;
+  height: 160px;
+  background-color: #daf832;
+  padding-left: 70px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: auto;
+}
+
+.FourGridText1 {
+  width: 690px;
+  height: 38px;
+  font-size: 30px;
+  line-height: 38px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.FourGridText2 {
+  width: 690px;
+  height: 38px;
+  font-size: 18px;
+  line-height: 38px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.FourGridText3 {
+  width: 690px;
+  height: 38px;
+  font-size: 15px;
+  line-height: 38px;
+  margin-left: 150px;
+  margin-top: -15px;
+}
+
+.OuterGrid {
+  display: flex;
+  flex-direction: row;
+  width: 680px;
+  height: 160px;
+  margin-left: 200px !important;
+  margin-right: 200px !important;
+  margin-bottom: 30px !important;
+  height: 150px;
+}
+
+.PostItem {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+  max-width: 400px;
+}
+
+.PostTitle {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.PieceOfContent {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.Author {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+.Time {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 6px;
+}
+
+.Photo img {
+  width: 240px;
+  height: 150px;
+  margin-left: 45px;
+}

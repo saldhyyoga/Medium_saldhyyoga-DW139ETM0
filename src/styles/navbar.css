@@ -2,3 +2,8 @@
   background-color: white !important ;
   box-shadow: none !important;
 }
+
+.Programming {
+  border-left: 1px solid grey;
+  height: 20px;
+}

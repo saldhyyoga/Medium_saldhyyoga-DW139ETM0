@@ -6,6 +6,8 @@ import Register from "./components/Register";
 import HomePage from "./components/HomePage";
 import { Switch, Route } from "react-router-dom";
 import CategoryPage from "./components/CategoryPage";
+import CobaMap from "./components/CobaMap";
+import ArticleDetails from "./components/ArticleDetails";
 
 export default class App extends Component {
   render() {
@@ -17,6 +19,8 @@ export default class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/categorypage" component={CategoryPage} />
+          <Route path="/cobamap" component={CobaMap} />
+          <Route path="/articledetails" component={ArticleDetails} />
         </Switch>
       </div>
     );

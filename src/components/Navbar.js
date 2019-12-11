@@ -9,7 +9,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import "../styles/navbar.css";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import ScrollMenus from "./ScrollMenus";
+// import ScrollMenus from "./ScrollMenus";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Navbar() {
+export default function Navbar(props) {
   const classes = useStyles();
   return (
     <div>
@@ -41,7 +41,8 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            <h1>Medium</h1>
+            <h1>{props.Title}</h1>
+            {/* <div className={props.Category}></div> */}
           </Typography>
           <IconButton aria-label="search" color="black">
             <SearchIcon />
@@ -50,11 +51,15 @@ export default function Navbar() {
             <NotificationsIcon />
           </IconButton>
           <IconButton>
-            <AccountCircleIcon />
+            <img
+              alt="Saldhy Yoga Prathama"
+              src="https://miro.medium.com/fit/c/32/32/0*WD1OUXDPkVUJ1my9.jpg"
+              width="32"
+              height="32"
+            />
           </IconButton>
         </Toolbar>
       </AppBar>
-      <ScrollMenus />
     </div>
   );
 }
