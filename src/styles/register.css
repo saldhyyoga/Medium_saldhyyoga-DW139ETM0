@@ -2,9 +2,14 @@
   margin-top: 5%;
   width: 100vw;
   height: 80vh;
-  background-size: contain;
+  background-size: 93%;
 
   background-image: url(https://cdn-images-1.medium.com/max/900/1*gnUBeL-INIVDk0_GyL8x1g.png);
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Button-style {
+  background-color: black !important;
+  color: white !important;
 }

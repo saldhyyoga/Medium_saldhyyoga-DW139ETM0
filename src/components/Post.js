@@ -6,6 +6,10 @@ import { CardContent, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import StarIcon from "@material-ui/icons/Star";
 import Image1 from "../1.jpeg";
+import Image2 from "../2.jpeg";
+import Image3 from "../3.jpeg";
+import Image4 from "../4.jpeg";
+import Image5 from "../5.jpeg";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -91,10 +95,53 @@ export default function Post() {
             <Grid style={{ flexDirection: "row", display: "flex" }}>
               <CardMedia
                 style={{ width: "150px" }}
-                alt="img1"
+                alt="img2"
                 component="img"
-                image={Image1}
-                title="Image 1"
+                image={Image2}
+                title="Image 2"
+                height="120"
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="h2"
+                  style={{ fontSize: "14px" }}
+                >
+                  A Pride Story: Choosing to Live My Black Fat Queer Life
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="black"
+                  component="p"
+                  style={{
+                    marginTop: "20px",
+                    paddingBottom: "0px",
+                    fontSize: "12px"
+                  }}
+                >
+                  Cody Charles in Level
+                </Typography>
+                <Typography
+                  color="black"
+                  component="p"
+                  style={{
+                    marginTop: "10px",
+                    fontSize: "10px"
+                  }}
+                >
+                  a few hours ago &middot; 6 min read{" "}
+                  <StarIcon className={classes.staricon} />
+                </Typography>
+              </CardContent>
+            </Grid>
+            <Grid style={{ flexDirection: "row", display: "flex" }}>
+              <CardMedia
+                style={{ width: "150px" }}
+                alt="img3"
+                component="img"
+                image={Image3}
+                title="Image 3"
                 height="120"
               />
               <CardContent>
@@ -136,50 +183,7 @@ export default function Post() {
                 style={{ width: "150px" }}
                 alt="img1"
                 component="img"
-                image={Image1}
-                title="Image 1"
-                height="120"
-              />
-              <CardContent>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="h2"
-                  style={{ fontSize: "14px" }}
-                >
-                  A Pride Story: Choosing to Live My Black Fat Queer Life
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="black"
-                  component="p"
-                  style={{
-                    marginTop: "20px",
-                    paddingBottom: "0px",
-                    fontSize: "12px"
-                  }}
-                >
-                  Cody Charles in Level
-                </Typography>
-                <Typography
-                  color="black"
-                  component="p"
-                  style={{
-                    marginTop: "10px",
-                    fontSize: "10px"
-                  }}
-                >
-                  a few hours ago &middot; 6 min read{" "}
-                  <StarIcon className={classes.staricon} />
-                </Typography>
-              </CardContent>
-            </Grid>
-            <Grid style={{ flexDirection: "row", display: "flex" }}>
-              <CardMedia
-                style={{ width: "150px" }}
-                alt="img1"
-                component="img"
-                image={Image1}
+                image={Image4}
                 title="Image 1"
                 height="120"
               />
@@ -222,7 +226,7 @@ export default function Post() {
             <CardMedia
               alt="img1"
               component="img"
-              image={Image1}
+              image={Image5}
               title="Image 1"
               height="170"
             />
@@ -268,7 +272,7 @@ export default function Post() {
                   marginTop: 45
                 }}
               >
-                SEE ALL FEATURED>
+                SEE ALL FEATURED >
               </Typography>
             </CardContent>
           </Grid>

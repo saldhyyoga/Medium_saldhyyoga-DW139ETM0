@@ -31,7 +31,14 @@ export const Menu = (list, selected) =>
   list.map(el => {
     const { name } = el;
 
-    return <MenuItem text={name} key={name} selected={selected} />;
+    return (
+      <MenuItem
+        text={name}
+        key={name}
+        selected={selected}
+        style={{ marginLeft: "10px", dislay: "flex", alignItems: "flex-start" }}
+      />
+    );
   });
 
 const Arrow = ({ text, className }) => {

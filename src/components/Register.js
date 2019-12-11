@@ -4,7 +4,7 @@ import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import React, { Component } from "react";
 import "../styles/register.css";
-// import { Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Login from "./Login";
 
 export default class Register extends Component {
@@ -39,14 +39,29 @@ export default class Register extends Component {
           />
         </Box>
         <Box textAlign="center" mt={3}>
-          <Button className="Button-style">Register</Button>
+          <Button className="Button-style">
+            <Link
+              to="/homepage"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Register
+            </Link>
+          </Button>
         </Box>
         <Box textAlign="center" mt={3}>
-          Already have an account ? Signin
-          {/* <Switch>
-            <Route path="/login" component={Login} />
-          </Switch> */}
+          Already have an account ?{" "}
+          <Link
+            to="/login"
+            style={{ color: "#12af92", textDecoration: "none" }}
+          >
+            Signin
+          </Link>
         </Box>
+        <Box textAlign="center" mt={2}>
+          To make Medium work,we log user data and share it with service
+        </Box>
+        <Box textAlign="center">Providers. Click "Sign Up" above to accept</Box>
+        <Box textAlign="center">Medium's Term of Service & Privacy Policy</Box>
       </div>
     );
   }

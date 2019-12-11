@@ -6,6 +6,7 @@ import TextField from "@material-ui/core/TextField";
 import React, { Component } from "react";
 import "../styles/login.css";
 import Register from "./Register";
+import { Link } from "react-router-dom";
 // import { Route, Switch, Link } from "react-router-dom";
 
 export default class Login extends Component {
@@ -40,10 +41,23 @@ export default class Login extends Component {
           />
         </Box>
         <Box textAlign="center" mt={3}>
-          <Button className="Button-style">Login</Button>
+          <Button className="Button-style">
+            <Link
+              to="/homepage"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Login
+            </Link>
+          </Button>
         </Box>
         <Box textAlign="center" mt={3}>
-          Don't have an account ? Signup
+          Don't have an account ?{" "}
+          <Link
+            to="/register"
+            style={{ textDecoration: "none", color: "#12af92" }}
+          >
+            Signup
+          </Link>
         </Box>
       </div>
     );

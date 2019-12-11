@@ -10,12 +10,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <HomePage />
-        {/* <Switch>
+        <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/homepage" component={HomePage} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
-        </Switch> */}
+        </Switch>
       </div>
     );
   }

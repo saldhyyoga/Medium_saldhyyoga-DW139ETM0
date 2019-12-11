@@ -38,19 +38,25 @@
 }
 
 .menu-item {
-  padding: 0 40px;
-  margin: 5px 10px;
+  padding: 0 5px 0px 5px;
+  margin: 5px 10px 0px 5px !important;
   user-select: none;
   cursor: pointer;
   border: none;
 }
 
 .scroll-menu-arrow {
-  padding: 20px;
+  padding: 5px;
+  margin-right: 10px !important;
   cursor: pointer;
 }
 
 .Scroll {
   position: relative;
   z-index: 500;
+  margin-left: -60px !important;
+}
+
+.arrow-prev {
+  margin-left: 150px !important;
 }
