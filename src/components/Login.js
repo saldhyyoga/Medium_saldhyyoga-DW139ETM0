@@ -14,7 +14,7 @@ export default class Login extends Component {
     return (
       <div className="App-content">
         {/* <Navbar /> */}
-        <AppBar title="login" />
+
         <Typography component="div">
           <Box className="Title" mt={3}>
             Sign in with email

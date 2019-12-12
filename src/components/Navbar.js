@@ -6,8 +6,10 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import MenuIcon from "@material-ui/icons/Menu";
+import Button from "@material-ui/core/Button";
 import "../styles/navbar.css";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+import { Link } from "react-router-dom";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 // import ScrollMenus from "./ScrollMenus";
 
@@ -41,7 +43,9 @@ export default function Navbar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            <h1>{props.Title}</h1>
+            <h1>
+              {props.Title} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{props.Category}
+            </h1>
             {/* <div className={props.Category}></div> */}
           </Typography>
           <IconButton aria-label="search" color="black">
@@ -58,6 +62,9 @@ export default function Navbar(props) {
               height="32"
             />
           </IconButton>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <Button variant="outlined">LOGIN</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>

@@ -67,6 +67,7 @@ export default class CategoryPage extends Component {
         <Navbar
           Title="Medium"
           style={{ boxShadow: "-10px 9px 11px -4px rgba(0,0,0,0.59)" }}
+          Category="Programming"
         />
         <Container maxWidth="lg">
           <div>
