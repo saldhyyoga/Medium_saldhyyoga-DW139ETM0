@@ -12,53 +12,52 @@ import { Link } from "react-router-dom";
 export default class Login extends Component {
   render() {
     return (
-      <div className="App-content">
+      <div className="FormLogin">
         {/* <Navbar /> */}
-
-        <Typography component="div">
-          <Box className="Title" mt={3}>
-            Sign in with email
+        <div className="BoxLogin">
+          <Typography component="div">
+            <Box mt={1} textAlign="center">
+              <span style={{ fontSize: "32px" }}>Sign in with Email</span>
+              <br /> Enter the email address associated with your account
+              <br />
+              and we'll send a magic link in to your inbox.
+            </Box>
+          </Typography>
+          <Box textAlign="center" mt={2}>
+            <TextField
+              placeholder="Enter username or email"
+              className="SizeTextField"
+              helperText="example saldhyyoga or saldhyy@gmail.com"
+            />
           </Box>
-          <Box mt={1} textAlign="center">
-            Enter the email address associated with your account
-            <br />
-            and we'll send a magic link in to your inbox.
+          <Box textAlign="center" mt={2.5}>
+            <TextField
+              className="SizeTextField"
+              placeholder="Enter password"
+              size="large"
+              type="password"
+            />
           </Box>
-        </Typography>
-        <Box textAlign="center" mt={2}>
-          <TextField
-            placeholder="Enter username or email"
-            className="SizeTextField"
-            helperText="example saldhyyoga or saldhyy@gmail.com"
-          />
-        </Box>
-        <Box textAlign="center" mt={2.5}>
-          <TextField
-            className="SizeTextField"
-            placeholder="Enter password"
-            size="large"
-            type="password"
-          />
-        </Box>
-        <Box textAlign="center" mt={3}>
-          <Button className="Button-style">
+          <Box textAlign="center" mt={3}>
+            <Button className="Button-style">
+              <Link
+                to="/homepage"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Login
+              </Link>
+            </Button>
+          </Box>
+          <Box textAlign="center" mt={3}>
+            Don't have an account ?{" "}
             <Link
-              to="/homepage"
-              style={{ textDecoration: "none", color: "white" }}
+              to="/register"
+              style={{ textDecoration: "none", color: "#12af92" }}
             >
-              Login
+              Signup
             </Link>
-          </Button>
-        </Box>
-        <Box textAlign="center" mt={3}>
-          Don't have an account ?{" "}
-          <Link
-            to="/register"
-            style={{ textDecoration: "none", color: "#12af92" }}
-          >
-            Signup
-          </Link>
-        </Box>
+          </Box>
+        </div>
       </div>
     );
   }
