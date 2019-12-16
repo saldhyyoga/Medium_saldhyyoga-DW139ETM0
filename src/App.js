@@ -8,6 +8,9 @@ import { Switch, Route } from "react-router-dom";
 import CategoryPage from "./components/CategoryPage";
 import CobaMap from "./components/CobaMap";
 import ArticleDetails from "./components/ArticleDetails";
+import Follow from "./components/Follow";
+import RelatedArticles from "./components/RelatedArticles";
+import Comment from "./components/Comment";
 
 export default class App extends Component {
   render() {
@@ -21,6 +24,9 @@ export default class App extends Component {
           <Route path="/categorypage" component={CategoryPage} />
           <Route path="/cobamap" component={CobaMap} />
           <Route path="/articledetails" component={ArticleDetails} />
+          <Route path="/follow" component={Follow} />
+          <Route path="/more" component={RelatedArticles} />
+          <Route path="/comment" component={Comment} />
         </Switch>
       </div>
     );

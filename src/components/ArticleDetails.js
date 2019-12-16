@@ -11,6 +11,8 @@ import {
 } from "@material-ui/core";
 import StarIcon from "@material-ui/icons/Star";
 import "../styles/articledetails.css";
+import Follow from "./Follow";
+import RelatedArticle from "./RelatedArticles";
 
 const staricon = {
   width: "15px",
@@ -235,6 +237,9 @@ export default class ArticleDetails extends Component {
             </Grid>
           </Grid>
         </Container>
+
+        <Follow />
+        <RelatedArticle />
       </div>
     );
   }

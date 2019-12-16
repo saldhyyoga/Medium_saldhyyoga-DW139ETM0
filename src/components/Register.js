@@ -14,7 +14,7 @@ export default class Register extends Component {
         <div className="BoxRegister">
           <Typography component="div">
             <center>
-              <div style={{ fontSize: "32px" }}>Sign in with Email</div>
+              <div style={{ fontSize: "32px" }}>Sign Up</div>
             </center>
             <Box mt={1} textAlign="center">
               create an account to receive great medium stories in your inbox
@@ -25,11 +25,10 @@ export default class Register extends Component {
             </Box>
           </Typography>
           <Box textAlign="center" mt={2}>
-            <TextField
-              placeholder="Enter username or email"
-              className="SizeTextField"
-              helperText="example saldhyyoga or saldhyy@gmail.com"
-            />
+            <TextField placeholder="Enter username" className="SizeTextField" />
+          </Box>
+          <Box textAlign="center" mt={2}>
+            <TextField placeholder="Enter email" className="SizeTextField" />
           </Box>
           <Box textAlign="center" mt={2.5}>
             <TextField
@@ -41,10 +40,7 @@ export default class Register extends Component {
           </Box>
           <Box textAlign="center" mt={3}>
             <Button className="Button-style">
-              <Link
-                to="/homepage"
-                style={{ textDecoration: "none", color: "white" }}
-              >
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                 Register
               </Link>
             </Button>

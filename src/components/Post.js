@@ -5,6 +5,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import { CardContent, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import StarIcon from "@material-ui/icons/Star";
+import { Link } from "react-router-dom";
 import Image1 from "../1.jpeg";
 import Image2 from "../2.jpeg";
 import Image3 from "../3.jpeg";
@@ -18,19 +19,45 @@ const staricon = {
 };
 
 export default class Post extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      postitems: [
+        {
+          title: "Building a Mobile App in 10 Days with React Native",
+          author: "Cody Charles in Level",
+          times: "a few hours ago · 6 min read "
+        },
+        {
+          title: "How to Make a Responsive App With React and Bootstrap",
+          author: "Cody Charles in Level",
+          times: "a few hours ago · 7 min read "
+        },
+        {
+          title: "The Power of the Composite Design Pattern in JavaScript",
+          author: "Cody Charles in Level ",
+          times: "a few hours ago · 8 min read"
+        }
+      ]
+    };
+  }
+
   render() {
     return (
       <div>
         <Container maxWidth="lg" style={{ marginTop: "30px" }}>
           <Grid container spacing={3}>
             <Grid item md={4} xs={12}>
-              <CardMedia
-                alt="img1"
-                component="img"
-                image={Image1}
-                title="Image 1"
-                height="200"
-              />
+              <Link to="/articledetails">
+                <CardMedia
+                  alt="img1"
+                  component="img"
+                  image={Image1}
+                  title="Image 1"
+                  height="200"
+                />
+              </Link>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
                   A Pride Story: Choosing to Live My Black Fat Queer Life
@@ -65,6 +92,59 @@ export default class Post extends React.Component {
                 </Typography>
               </CardContent>
             </Grid>
+
+            {/* {this.state.postitems.map(item => {
+              return (
+                <Grid item md={4} lg={4} xs={12}>
+                  <Grid style={{ flexDirection: "row", display: "flex" }}>
+                    <CardMedia
+                      style={{ width: "150px" }}
+                      alt="img2"
+                      component="img"
+                      image={Image2}
+                      title="Image 2"
+                      height="120"
+                    />
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="h2"
+                        style={{ fontSize: "14px" }}
+                      >
+                        {item.title}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="black"
+                        component="p"
+                        style={{
+                          marginTop: "20px",
+                          paddingBottom: "0px",
+                          fontSize: "12px"
+                        }}
+                      >
+                        {item.author}
+                      </Typography>
+                      <Typography
+                        color="black"
+                        component="p"
+                        style={{
+                          marginTop: "10px",
+                          fontSize: "10px"
+                        }}
+                      >
+                        {item.times}
+                        <StarIcon style={staricon} />
+                      </Typography>
+                    </CardContent>
+                  </Grid>
+                </Grid>
+              );
+            })} */}
+
+            {/* <Grid item md={4} lg={4} xs={12}></Grid> */}
+
             <Grid item md={4} lg={4} xs={12}>
               <Grid style={{ flexDirection: "row", display: "flex" }}>
                 <CardMedia
@@ -82,7 +162,7 @@ export default class Post extends React.Component {
                     component="h2"
                     style={{ fontSize: "14px" }}
                   >
-                    A Pride Story: Choosing to Live My Black Fat Queer Life
+                    Building a Mobile App in 10 Days with React Native
                   </Typography>
                   <Typography
                     variant="body2"
@@ -125,7 +205,7 @@ export default class Post extends React.Component {
                     component="h2"
                     style={{ fontSize: "14px" }}
                   >
-                    A Pride Story: Choosing to Live My Black Fat Queer Life
+                    How to Make a Responsive App With React and Bootstrap
                   </Typography>
                   <Typography
                     variant="body2"
@@ -168,7 +248,7 @@ export default class Post extends React.Component {
                     component="h2"
                     style={{ fontSize: "14px" }}
                   >
-                    A Pride Story: Choosing to Live My Black Fat Queer Life
+                    The Power of the Composite Design Pattern in JavaScript
                   </Typography>
                   <Typography
                     variant="body2"

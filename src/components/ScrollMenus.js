@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ScrollMenu from "react-horizontal-scrolling-menu";
+import { Link } from "react-router-dom";
 import "../App.css";
+import "../styles/scrollmenu.css";
 
 // list of items
 const list = [
@@ -32,12 +34,18 @@ export const Menu = (list, selected) =>
     const { name } = el;
 
     return (
-      <MenuItem
-        text={name}
-        key={name}
-        selected={selected}
-        style={{ marginLeft: "10px", dislay: "flex", alignItems: "flex-start" }}
-      />
+      <Link to="/categorypage" className="link">
+        <MenuItem
+          text={name}
+          key={name}
+          selected={selected}
+          style={{
+            marginLeft: "10px",
+            dislay: "flex",
+            alignItems: "flex-start"
+          }}
+        />
+      </Link>
     );
   });
 

@@ -60,3 +60,8 @@
 .arrow-prev {
   margin-left: 150px !important;
 }
+
+.linking {
+  text-decoration: none;
+  color: black;
+}

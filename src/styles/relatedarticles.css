@@ -1,0 +1,112 @@
+.FontColor {
+  color: rgba(0, 0, 0, 0.54);
+}
+.HorizonLine {
+  width: 1150px;
+}
+
+.MoreArticles {
+  padding-left: 20px;
+  margin-top: 50px;
+  /* margin-bottom: ; */
+}
+
+.BackgroundColor {
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.BackgroundColorOuter {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.RelatedArticles {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.RelatedArticlesBreakPoint {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.ImageSize {
+  width: 364px;
+  height: 242px;
+  padding-top: 16px;
+}
+
+.Description {
+  font-size: 24px;
+  padding-top: 16px;
+}
+
+.AuthorName {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.Author {
+  display: flex;
+  flex-direction: row;
+}
+
+.Avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.Bookmark {
+  padding-top: 10px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .BookmarkIcon {
+  padding-top: 5px;
+} */
+
+.FontSize {
+  font-size: 14px !important;
+}
+
+ion-icon {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.Footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 340px;
+  width: 100%;
+}
+
+.FooterWrapper {
+  display: flex;
+  flex-direction: row;
+  color: white !important;
+  width: 1240px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.FontFooter {
+  font-size: 13px;
+  width: 350px;
+}
+
+.FooterMedium {
+  padding-top: 30px;
+}
+
+.LinkFooter {
+  padding-right: 10px;
+}

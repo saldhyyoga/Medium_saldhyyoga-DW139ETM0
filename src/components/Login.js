@@ -40,10 +40,7 @@ export default class Login extends Component {
           </Box>
           <Box textAlign="center" mt={3}>
             <Button className="Button-style">
-              <Link
-                to="/homepage"
-                style={{ textDecoration: "none", color: "white" }}
-              >
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                 Login
               </Link>
             </Button>

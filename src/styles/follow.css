@@ -1,0 +1,92 @@
+.Container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 680px;
+  height: 571px;
+  margin-left: 300px;
+  margin-right: 280px;
+  margin-bottom: 30px;
+}
+
+.Buttons {
+  width: auto;
+  height: 32px !important;
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-left: 7px;
+  border: none !important;
+  cursor: pointer;
+}
+
+.ContainerButton {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.Claps ion-icon {
+  font-size: 45px;
+  padding-left: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.Claps {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.ClapsCounter {
+  padding-top: 30px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Social {
+  padding-top: 30px;
+  padding-left: 290px;
+  cursor: pointer;
+}
+
+.PaddingSocial {
+  padding-left: 10px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+.AuthorItem {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.AuthorDetails {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.WrittenBy {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.Grey {
+  color: grey;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.buttonfollow {
+  padding-top: 20px;
+  padding-left: 350px;
+}
+
+.SeeResponse {
+  width: 680px;
+  height: 48px;
+}

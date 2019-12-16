@@ -9,6 +9,8 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import StarIcon from "@material-ui/icons/Star";
 import { Container, Grid } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import "../../src/App.css";
 import "../styles/article.css";
 
 const useStyles = makeStyles({
@@ -41,7 +43,9 @@ export default function MediaCard() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  A Pride Story: Choosing to Live My Black Fat Queer Life
+                  <Link to="/articledetails" className="linking">
+                    A Pride Story: Choosing to Live My Black Fat Queer Life
+                  </Link>
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   As a child, queering my life gave me choices. The main choice?

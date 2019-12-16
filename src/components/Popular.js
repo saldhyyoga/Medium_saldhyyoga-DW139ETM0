@@ -103,7 +103,7 @@ export default function Popular() {
               }}
               alt="img1"
               component="img"
-              image={Image1}
+              image="https://miro.medium.com/max/4820/0*JuNwtWyWm8y523Kk"
               title="Image 1"
               height="180"
             />
@@ -159,7 +159,7 @@ export default function Popular() {
               }}
               alt="img1"
               component="img"
-              image={Image1}
+              image="https://miro.medium.com/max/5198/1*nIjfoUR90CUKibydNhq_Bw.jpeg"
               title="Image 1"
               height="180"
             />
@@ -328,7 +328,7 @@ export default function Popular() {
             </Grid>
             <Grid style={{ display: "flex", flexDirection: "row" }}>
               <Grid>
-                <h1 style={{ color: "grey" }}>01</h1>
+                <h1 style={{ color: "grey" }}>02</h1>
               </Grid>
               <Grid>
                 <CardContent>
@@ -368,7 +368,7 @@ export default function Popular() {
             </Grid>
             <Grid style={{ display: "flex", flexDirection: "row" }}>
               <Grid>
-                <h1 style={{ color: "grey" }}>01</h1>
+                <h1 style={{ color: "grey" }}>03</h1>
               </Grid>
               <Grid>
                 <CardContent>
@@ -408,7 +408,7 @@ export default function Popular() {
             </Grid>
             <Grid style={{ display: "flex", flexDirection: "row" }}>
               <Grid>
-                <h1 style={{ color: "grey" }}>01</h1>
+                <h1 style={{ color: "grey" }}>04</h1>
               </Grid>
               <Grid>
                 <CardContent>
@@ -448,7 +448,7 @@ export default function Popular() {
             </Grid>
             <Grid style={{ display: "flex", flexDirection: "row" }}>
               <Grid>
-                <h1 style={{ color: "grey" }}>01</h1>
+                <h1 style={{ color: "grey" }}>05</h1>
               </Grid>
               <Grid>
                 <CardContent>

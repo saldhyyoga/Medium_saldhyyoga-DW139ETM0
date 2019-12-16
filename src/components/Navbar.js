@@ -6,11 +6,12 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import MenuIcon from "@material-ui/icons/Menu";
-import Button from "@material-ui/core/Button";
 import "../styles/navbar.css";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { Link } from "react-router-dom";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import Drawer from "./Drawer";
+// import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+// import TabProfile from "./TabProfile";
 // import ScrollMenus from "./ScrollMenus";
 
 const useStyles = makeStyles(theme => ({
@@ -25,11 +26,18 @@ const useStyles = makeStyles(theme => ({
     color: "black",
     fontSize: 12,
     fontStyle: "Mono"
+  },
+  list: {
+    width: 250
+  },
+  fullList: {
+    width: "auto"
   }
 }));
 
 export default function Navbar(props) {
   const classes = useStyles();
+
   return (
     <div>
       <AppBar position="static" className="Appbar">
@@ -43,9 +51,11 @@ export default function Navbar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            <h1>
-              {props.Title} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{props.Category}
-            </h1>
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+              <h1>
+                {props.Title} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{props.Category}
+              </h1>
+            </Link>
             {/* <div className={props.Category}></div> */}
           </Typography>
           <IconButton aria-label="search" color="black">
@@ -60,11 +70,13 @@ export default function Navbar(props) {
               src="https://miro.medium.com/fit/c/32/32/0*WD1OUXDPkVUJ1my9.jpg"
               width="32"
               height="32"
+              
             />
           </IconButton>
-          <Link to="/login" style={{ textDecoration: "none" }}>
+
+          {/* <Link to="/login" style={{ textDecoration: "none" }}>
             <Button variant="outlined">LOGIN</Button>
-          </Link>
+          </Link> */}
         </Toolbar>
       </AppBar>
     </div>
