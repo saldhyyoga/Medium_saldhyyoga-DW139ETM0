@@ -10,7 +10,7 @@ import CobaMap from "./components/CobaMap";
 import ArticleDetails from "./components/ArticleDetails";
 import Follow from "./components/Follow";
 import RelatedArticles from "./components/RelatedArticles";
-import Comment from "./components/Comment";
+import Comment from "./Pages/Comment";
 
 export default class App extends Component {
   render() {
